@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--!!! Required meta tags !!!-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <!-- Site Title -->
+    <title>Jquery 15 Functions</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- main start -->
+    <main>
+        <div class="container">
+            <!-- Jumbotron  -->
+            <div class="jumbotron mt-3">
+                <h1 class="display-4">Hello, jQery</h1>
+                <p class="lead">Click the button to chnage the alert text .!!!</p>
+                <hr class="my-4">
+                <a class="btn btn-primary btn-md" onclick="changeMe()" href="#" role="button">Change Me</a>
+                <a class="btn btn-primary btn-md" onclick="originalMe()" href="#" role="button">Original</a>
+                <div class="alert alert-danger mt-4" role="alert" id="alert">
+                    I will be change soon! If you clcik me!
+                </div>
+            </div>
+
+            <!-- hide show card  -->
+            <div class="row card-toggle">
+                <div class="col-md-6">
+                    <button id="hide" type="button" class="btn btn-danger mb-3">Hide</button>
+                    <button id="show" type="button" class="btn btn-success mb-3">Show</button>
+                    <div class="card hideshow_1" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <button id="toggle_1" type="button" class="btn btn-warning mb-3">Show/Hide</button>
+                    <div class="card hideshow_2" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- hide para -->
+            <div class="row">
+                <div class="col-12 my-4">
+                    <div class="card hidepara"">
+                        <div class=" card-body">
+                        <h4 class="card-title">Single click each paragraph to hide...!!</h4>
+                        <p class="s_para">If you click on me, I will disappear.</p>
+                        <p class="s_para">Click me away!</p>
+                        <p class="s_para">Click me too!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- hide para -->
+        <div class="row">
+            <div class="col-12 my-4">
+                <div class="card hidepara"">
+                        <div class=" card-body">
+                    <h4 class="card-title">Double click each paragraph to hide...!!</h4>
+                    <p class="dbl_click">If you Double click on me, I will disappear.</p>
+                    <p class="dbl_click">Double Click me away!</p>
+                    <p class="dbl_click">Double Click me too!</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- cards bg change  -->
+
+        <div class="row">
+            <div class="col-12 text-center py-3">
+                <h2>Click each card to see the background change....!!</h2>
+            </div>
+            <!-- single-card  -->
+            <div class="col-sm-3">
+                <div id="card_1" class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Primary card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- single-card  -->
+            <div class="col-sm-3">
+                <div id="card_2" class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Primary card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- single-card  -->
+            <div class="col-sm-3">
+                <div id="card_3" class="card text-white bg-danger mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Primary card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- single-card  -->
+            <div class="col-sm-3">
+                <div id="card_4" class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                    <div class="card-header">Header</div>
+                    <div class="card-body">
+                        <h5 class="card-title">Primary card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                            of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animations  -->
+        <div class="row">
+            <div class="col-6" style="background:red; height:500px; position:relative;">
+                <div class="bitton py-4">
+                    <button id="amimation" class="btn btn-md btn-primary">Start Animation</button>
+                </div>
+
+
+                <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the
+                    position, remember to first set the CSS position property of the element to relative, fixed, or
+                    absolute!</p>
+
+                <div class="amnimate_div" style="background:#98bf21;height:100px;width:100px;position:absolute;">
+                </div>
+            </div>
+            <div class="col-6" style="background:red; height:500px; position:relative;">
+                <div class="bitton py-4">
+                    <button id="amimation2" class="btn btn-md btn-primary">Start Animation 2</button>
+                </div>
+
+
+                <p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the
+                    position, remember to first set the CSS position property of the element to relative, fixed, or
+                    absolute!</p>
+
+                <div class="amnimate_div2" style="background:#98bf21;height:100px;width:200px;position:absolute;">
+                    HELLO</div>
+            </div>
+        </div>
+
+        <!-- fade in out  -->
+        <div class="row py-5">
+            <div class="col-md-6">
+                <div class="btn-group mb-4">
+                    <button id="f-out" class="btn btn-primary btn-lg mr-2">fade out</button>
+                    <button id="f-in" class="btn btn-warning btn-lg">fade in</button>
+                </div>
+
+
+                <div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+                <div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+                <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+            </div>
+
+            <div class="col-md-6">
+                <p id="p1">jQuery is fun!!</p>
+
+                <button id="fun" class="btn btn-info btn-lg">Click me</button>
+            </div>
+        </div>
+        <!-- fade in out  Ends-->
+
+        <!-- Mouse events  -->
+        <div class="row">
+            <div class="col-12 text-center py-3">
+                <h2>Mouse over each card to see the change...!!!</h2>
+            </div>
+            <!-- events  -->
+            <div class="col-6">
+                <div id="me_5" class="card border-dark mb-3" style="width: 35rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Hover Event</h5>
+                        <p class="card-text">This is a Hover Event Example</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div id="me_6" class="card border-dark mb-3" style="width: 35rem;">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Focus Event</h5>
+                        Name: <input type="text" name="fullname"><br>
+                        Email: <input type="text" name="email">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mouse Events -->
+            <div class="col-6 me_1">
+                <div class="card border-primary mb-3" style="width: 35rem;">
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">Mouse Enter</h5>
+                        <p class="card-text">This is a Mouse Enter Example</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 me_2">
+                <div class="card border-success mb-3" style="width: 35rem;">
+                    <div class="card-body text-success">
+                        <h5 class="card-title">Mouse Leave</h5>
+                        <p class="card-text">This is a Mouse Leave Example</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 me_3">
+                <div class="card border-danger mb-3" style="width: 35rem;">
+                    <div class="card-body text-danger">
+                        <h5 class="card-title">Mouse Down</h5>
+                        <p class="card-text">This is a Mouse Down Example</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-6 me_4">
+                <div class="card border-dark mb-3" style="width: 35rem;">
+                    <div class="card-body text-dark">
+                        <h5 class="card-title">Mouse UP</h5>
+                        <p class="card-text">This is a Mouse UP Example</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Mouse Events Ends -->
+        </div>
+
+        </div>
+    </main>
+    <!--/. main end -->
+
+    <!-- footer start -->
+    <footer id="footer">
+        <div class="container text-center">
+            <hr>
+            <p>Copyright &copy; <span id="year"></span> Shanto's Blackbox</p>
+        </div>
+    </footer>
+    <!--/. footer end -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--!! Main JS !!-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

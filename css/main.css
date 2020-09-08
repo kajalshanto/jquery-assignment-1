@@ -1,0 +1,37 @@
+/* import Bradon fonts */
+@font-face {
+    src: url(../fonts/Brandon_reg.otf);
+    font-family: Bradon_reg;
+}
+
+@font-face {
+    src: url(../fonts/Brandon_med.otf);
+    font-family: Bradon_med;
+}
+
+@font-face {
+    src: url(../fonts/Brandon_light.otf);
+    font-family: Bradon_light;
+}
+
+@font-face {
+    src: url(../fonts/Brandon_bld.otf);
+    font-family: Bradon_bold;
+}
+
+
+/* Global styles start*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
